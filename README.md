@@ -1,2 +1,2 @@
 # eao-nginx
-Environmental Assessment Office - NGINX
+Nginx configuration for the Environmental Assessment Office's EPIC
