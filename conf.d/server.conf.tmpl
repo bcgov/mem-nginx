@@ -14,6 +14,9 @@ server {
         # proxy all traffic to this URL, 
         # note the trailing slash strips out the /proxy path on 
         # the request to the upstream server
+
+        perl_set $passwordprotected 'sub { return $ENV{"NGINX_PASSWORD_PROTECTED"}; }';
+
         proxy_pass ${NGINX_PROXY_URL};
         
         # Ensure HTTP get passed thru
@@ -21,6 +24,13 @@ server {
         
         # its helpful to cache these responses
         proxy_cache globalcache;
+
+        # Check if we need to password protect the site.
+        if ($passwordprotected) {
+            auth_basic "Restricted Content";
+            auth_basic_user_file /etc/nginx/.htpasswd;
+        }
+
     }
 
     # Cache the lib directory
