@@ -55,7 +55,7 @@ server {
 		${HTTP_BASIC}
 
 		# Enable CORS for other domains
-		set $cors '';
+		set $cors 'false';
 		if ($http_origin ~ '^https?://(localhost|.*\.pathfinder\.gov\.bc\.ca)') {
 			set $cors 'true';
 		}
