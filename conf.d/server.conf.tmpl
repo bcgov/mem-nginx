@@ -126,7 +126,7 @@ server {
 		# note the trailing slash strips out the /proxy path on
 		# the request to the upstream server
 
-		proxy_pass ${NGINX_EXPORT_URL};
+		proxy_pass ${NGINX_EXPORT_URL}/api/export/;
 
 		# Ensure HTTP get passed thru
 		proxy_pass_request_headers on;
