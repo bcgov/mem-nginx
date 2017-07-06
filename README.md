@@ -1,5 +1,5 @@
 # eao-nginx
-Nginx configuration for the Environmental Assessment Office's EPIC
+Nginx configuration for the Ministry of Energy and Mines.
 
 ## Example rollout usage
 
