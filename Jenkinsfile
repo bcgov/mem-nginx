@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('build mem-nginx'){
+        stage('build rproxy'){
             steps {
-                openshiftBuild(bldCfg: 'mem-nginx', showBuildLogs: 'true')
+                openshiftBuild(bldCfg: 'rproxy', showBuildLogs: 'true')
             }
         }
-        stage('tag mem-nginx'){
+        stage('tag rproxy'){
             steps {
-                openshiftTag(srcStream: 'mem-nginx', srcTag: 'latest', destStream: 'mem-nginx', destTag: 'dev')
+                openshiftTag(srcStream: 'rproxy', srcTag: 'latest', destStream: 'rproxy', destTag: 'dev')
             }
         }
     }
