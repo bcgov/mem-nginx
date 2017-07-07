@@ -184,6 +184,30 @@
       "displayName": "NGinx Proxy Host",
       "description": "The HTTP Header Host value we want to give to the downstream HTTP server",
       "required": true
+    },
+    {
+      "name": "NGINX_PROXY_URL",
+      "displayName": "Host that receives incoming web requests",
+      "description": "The HTTP Header Host value we want to give to the downstream HTTP server",
+      "required": true
+    },
+    {
+      "name": "HTTP_API_DEPLOY_CONFIG",
+      "displayName": "A way to inject nginx params into the config",
+      "description": "The HTTP Header Host value we want to give to the downstream HTTP server",
+      "required": true
+    },
+    {
+      "name": "NGINX_EXPORT_URL",
+      "displayName": "Geo Service location",
+      "description": "The HTTP Header Host value we want to give to the downstream HTTP server",
+      "required": true
+    },
+    {
+      "name": "NGINX_PROXY_URL_PUBLIC",
+      "displayName": "Host that receives incoming www.* requests",
+      "description": "The HTTP Header Host value we want to give to the downstream HTTP server",
+      "required": true
     }
   ]
 }
