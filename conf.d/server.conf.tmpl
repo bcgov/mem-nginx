@@ -128,7 +128,7 @@ server {
 		access_log off;
 	}
 	
-    	location /eguide {
+    	location /eguide/ {
 		proxy_pass ${NGINX_PROXY_EGUIDE};
 
         	# Ensure HTTP get passed thru
