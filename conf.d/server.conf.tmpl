@@ -136,5 +136,7 @@ server {
 
 		# its helpful to cache these responses
 		proxy_cache globalcache;
+		
+		${HTTP_BASIC1}
 	}
 }
