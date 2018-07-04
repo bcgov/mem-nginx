@@ -140,6 +140,18 @@
                   {
                     "name": "HTTP_BASIC1",
                     "value": "${HTTP_BASIC1}"
+                  },
+                  {
+                    "name": "USERNAME2",
+                    "value": "${USERNAME2}"
+                  },
+                  {
+                    "name": "PASSWORD2",
+                    "value": "${PASSWORD2}"
+                  },
+                  {
+                    "name": "HTTP_BASIC2",
+                    "value": "${HTTP_BASIC2}"
                   }
                 ]
               }
@@ -328,6 +340,21 @@
     },
     {
       "name": "HTTP_BASIC1",
+      "displayName": "HTTP Basic Nginx Config Line",
+      "description": "For very simple HTTP Basic authentication, use HTTP_BASIC1 in your nginx config and provide the value here that you want in nginx config, e.g., auth_basic 'restricted'"
+    },
+    {
+      "name": "USERNAME2",
+      "displayName": "HTTP Basic Username",
+      "description": "For very simple HTTP Basic authentication, the username of the ONE user"
+    },
+    {
+      "name": "PASSWORD2",
+      "displayName": "HTTP Basic Password",
+      "description": "For very simple HTTP Basic authentication, the password of the ONE user"
+    },
+    {
+      "name": "HTTP_BASIC2",
       "displayName": "HTTP Basic Nginx Config Line",
       "description": "For very simple HTTP Basic authentication, use HTTP_BASIC1 in your nginx config and provide the value here that you want in nginx config, e.g., auth_basic 'restricted'"
     }
