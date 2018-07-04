@@ -161,4 +161,16 @@ server {
 
     ${HTTP_BASIC1}
   }
+
+  location /rceguide {
+    proxy_pass ${NGINX_PROXY_REGULATORY_CONTINUUM_EGUIDE};
+
+    # Ensure HTTP get passed thru
+    proxy_pass_request_headers on;
+
+    # its helpful to cache these responses
+    proxy_cache globalcache;
+
+    ${HTTP_BASIC2}
+  }
 }
