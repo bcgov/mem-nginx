@@ -142,16 +142,20 @@
                     "value": "${HTTP_BASIC1}"
                   },
                   {
-                    "name": "USERNAME2",
-                    "value": "${USERNAME2}"
+                    "name": "REGULATORY_CONTINUUM_EGUIDE_NGINX_PROXY",
+                    "value": "${REGULATORY_CONTINUUM_EGUIDE_NGINX_PROXY}"
                   },
                   {
-                    "name": "PASSWORD2",
-                    "value": "${PASSWORD2}"
+                    "name": "REGULATORY_CONTINUUM_EGUIDE_HTTP_BASIC",
+                    "value": "${REGULATORY_CONTINUUM_EGUIDE_HTTP_BASIC}"
                   },
                   {
-                    "name": "HTTP_BASIC2",
-                    "value": "${HTTP_BASIC2}"
+                    "name": "REGULATORY_CONTINUUM_EGUIDE_USERNAME",
+                    "value": "${REGULATORY_CONTINUUM_EGUIDE_USERNAME}"
+                  },
+                  {
+                    "name": "REGULATORY_CONTINUUM_EGUIDE_PASSWORD",
+                    "value": "${REGULATORY_CONTINUUM_EGUIDE_PASSWORD}"
                   }
                 ]
               }
@@ -314,12 +318,6 @@
       "required": true
     },
     {
-      "name": "NGINX_PROXY_REGULATORY_CONTINUUM_EGUIDE",
-      "displayName": "Regulatory Continuum EGUIDE Service location",
-      "description": "The HTTP Header Host value we want to give to the downstream HTTP server",
-      "required": true
-    },
-    {
       "name": "HTTP_BASIC",
       "displayName": "HTTP Basic Nginx Config Line",
       "description": "For very simple HTTP Basic authentication, use HTTP_BASIC in your nginx config and provide the value here that you want in nginx config, e.g., auth_basic 'restricted'"
@@ -350,19 +348,25 @@
       "description": "For very simple HTTP Basic authentication, use HTTP_BASIC1 in your nginx config and provide the value here that you want in nginx config, e.g., auth_basic 'restricted'"
     },
     {
-      "name": "USERNAME2",
+      "name": "REGULATORY_CONTINUUM_EGUIDE_NGINX_PROXY",
+      "displayName": "Regulatory Continuum EGUIDE Service location",
+      "description": "The HTTP Header Host value we want to give to the downstream HTTP server",
+      "required": true
+    },
+    {
+      "name": "REGULATORY_CONTINUUM_EGUIDE_HTTP_BASIC",
+      "displayName": "HTTP Basic Nginx Config Line",
+      "description": "For very simple HTTP Basic authentication, use REGULATORY_CONTINUUM_EGUIDE_HTTP_BASIC in your nginx config and provide the value here that you want in nginx config, e.g., auth_basic 'restricted'"
+    },
+    {
+      "name": "REGULATORY_CONTINUUM_EGUIDE_USERNAME",
       "displayName": "HTTP Basic Username",
       "description": "For very simple HTTP Basic authentication, the username of the ONE user"
     },
     {
-      "name": "PASSWORD2",
+      "name": "REGULATORY_CONTINUUM_EGUIDE_PASSWORD",
       "displayName": "HTTP Basic Password",
       "description": "For very simple HTTP Basic authentication, the password of the ONE user"
-    },
-    {
-      "name": "HTTP_BASIC2",
-      "displayName": "HTTP Basic Nginx Config Line",
-      "description": "For very simple HTTP Basic authentication, use HTTP_BASIC1 in your nginx config and provide the value here that you want in nginx config, e.g., auth_basic 'restricted'"
     }
   ]
 }
