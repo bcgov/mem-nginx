@@ -163,7 +163,7 @@ server {
   }
 
   location /rceguide {
-    proxy_pass ${REGULATORY_CONTINUUM_EGUIDE_NGINX_PROXY};
+    proxy_pass ${NGINX_PROXY_EGUIDE2};
 
     # Ensure HTTP get passed thru
     proxy_pass_request_headers on;
